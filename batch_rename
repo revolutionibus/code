@@ -1,0 +1,12 @@
+import os
+i=1
+os.chdir("/home/revolutionibus/Downloads/ImageScraper-1.1.0/image_scraper/images2/image3")
+filename =[]
+for item in os.listdir():
+    filename.append(item)
+for item in filename:
+        oldfile = filename[i]
+        print(oldfile)
+        newFilename = str(i)+".jpg"
+        os.rename(filename[i], newFilename)
+        i = i+1
